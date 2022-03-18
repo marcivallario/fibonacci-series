@@ -1,5 +1,12 @@
 def fibonacci(num)
-  # type your code in here
+  fib_arr = [0, 1]
+  if num >=2 
+    for i in 2..num 
+      new_num = fib_arr[i-1] + fib_arr[i-2]
+      fib_arr << new_num
+    end
+  end
+  return fib_arr[num]
 end
 
 if __FILE__ == $PROGRAM_NAME
